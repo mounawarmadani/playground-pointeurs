@@ -7,32 +7,37 @@ Pour réaliser les exercices suivants il est utile d'avoir compris la théorie s
 1. Si on place un symbole `&` devant un nom de variable, on obtient son adresse au lieu de sa valeur (ex. : `&age`).
 1. Si on place un symbole `*` devant un nom de pointeur, on obtient la valeur de la variable stockée à l'adresse indiquée par le pointeur.
 
-## Exemple exécutable
+## Exemple 1
+
+Essayer le code ci-dessous.
+
+**Note** : `%p` permet d'afficher une adresse.
 
 ```C runnable
 #include <stdio.h>
 
 int main() {
-    int a;
-    int *pta;
-    
-    a=8;
-    pta = &a;
-    
-    //Affichage de la valeur de a grâce à a
-    printf("Valeur de a : %d\n",a);    
-    //Affichage de la valeur de a grâce à pta
-    printf("Valeur de a : %d\n",*pta);
-    
-    //Affichage de l'adresse de a grâce à a
-    printf("Adresse de a : %p\n",&a);
-    //Affichage de l'adresse de a grâce à pta
-    printf("Adresse de a : %p\n",pta);
-    
-    return 0;
+	int a = 55, b = 66, c = 77;
+
+	printf("L'adresse de a avant incrémentation : %p\n", &a);
+	printf("L'adresse de b avant incrémentation : %p\n", &b);
+	printf("L'adresse de c avant incrémentation : %p\n", &c);
+
+	a++;
+	b++;
+	c++;
+
+	printf("\nL'adresse de a après incrémentation :  %p\n", &a);
+	printf("L'adresse de b après incrémentation :  %p\n", &b);
+	printf("L'adresse de c après incrémentation :  %p\n", &c);
+
+	return 0;
 }
 
 ```
+On peut remarquer que l'adresse des variables `a`, `b` et `c` est la même avant et après la modification. L'adresse de la variable est bien indépendante de la valeur de la variable. 
+
+## Exemple 2
 
 Avant de compléter le code, exécuter le une fois pour constater les valeurs de `pta` et `ptb`. Une fois compléter exécuter le code plusieurs fois.
 
@@ -64,6 +69,27 @@ int main() {
 - [x] Les adresses changent lors de chaque exécution
 - [ ] Les adresses sont toujours les mêmes
 - [x] Si pta et/ou ptb n'ont pas été affecté leur valeur n'ont pas de sens
+
+## Exemple 3
+
+```C runnable
+#include <stdio.h>
+
+int main()
+{
+	int a = 55;
+	int *pa = &a;
+
+	printf("L'adresse de a est %p\n", &a);
+	printf("Le contenu de a est %d\n", a);
+	printf("Le contenu de pa  est %p\n", pa);
+	printf("L'adresse de pa  est %p\n", &pa);
+
+	return 0;
+}
+```
+Nous pouvons constater que `*pa == a`, car `pa == &a`.
+
 
 # Quizz
 
