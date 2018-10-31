@@ -1,10 +1,12 @@
-title: C++ Project
+title: Labo 9
 plan:
-- title: Welcome
-  statement: markdowns/welcome.md
+- title: Introduction
+  statement: markdowns/introduction.md
+- title: Exercice 1
+  statement: markdowns/ex1.md
 projects:
-  cpp:
-    root: /cpp-project
+  swap:
+    root: /swap
     runner:
       name: techio/cmake-gcc-runner
       version: latest
