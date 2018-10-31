@@ -1,3 +1,3 @@
 #!/bin/sh
 
-make && ./Exercices/swap
+make && ./swap
