@@ -117,7 +117,7 @@ void f(int p) {
 void g(int a) {
 	printf("L'adresse de a dans g() est %p\n", &a);
 	printf("Le contenu de a dans g() est %d\n",a);
-	f(r);
+	f(a);
 }
 
 int main() {
@@ -132,7 +132,13 @@ int main() {
 }
 ```
 
-
+?[Que constatez-vous lors de l'exécution]
+- [ ] La variable a dans g() est strictement la même que celle dans le main().
+- [ ] La varialbe a dans g() n'a aucun lien avec la variable a dans le main().
+- [x] La variable a dans g() est une copie de la valeur de la variable a dans le main().
+- [ ] La variable p dans f() n'a aucun lien avec la variable a dans le main().
+- [x] La variable p dans f() est une copie de la valeur de la variable a dans le main().
+- [x] Les variables a dans le main(), a dans g(p) et p dans f() sont toutes dans des contextes différents.
 # Quizz
 
 Afin de tester votre compréhension de la matière, complèter [ce questionnaire](https://goo.gl/forms/C3WkjJmB18vOww2C3)
