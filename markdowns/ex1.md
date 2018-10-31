@@ -1,5 +1,5 @@
-# Exercise 1
+# Exercice 1
 
 ## Hands-on Demo
 
-@[Luke, how many stars are there in these galaxies?]({"stubs": ["src/Exercises/Universe.cpp"],"command": "sh /project/target/run.sh"})
+@[Fonction d'échange]({"stubs": ["src/Exercises/swap.h"],"command": "sh /project/target/run.sh"})
