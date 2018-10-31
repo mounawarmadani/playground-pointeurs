@@ -37,6 +37,13 @@ int main() {
 ```
 On peut remarquer que l'adresse des variables `a`, `b` et `c` est la même avant et après la modification. L'adresse de la variable est bien indépendante de la valeur de la variable. 
 
+?[Que constatez-vous lors de l'exécution]
+- [ ] L'adresse des variables a, b et c est différente avant et après la modification.
+- [x] L'adresse des variables a, b et c est la même avant et après la modification.
+- [x] L'adresse d'une variable est indépante de la valeur de la variable.
+- [ ] L'adresse d'une variable dépend de la valeur de la variable.
+
+
 ## Exemple 2
 
 Avant de compléter le code, exécuter le une fois pour constater les valeurs de `pta` et `ptb`. Une fois compléter exécuter le code plusieurs fois.
@@ -88,7 +95,42 @@ int main()
 	return 0;
 }
 ```
-Nous pouvons constater que `*pa == a`, car `pa == &a`.
+
+?[Que constatez-vous lors de l'exécution]
+- [x] *pa == a car pa = &a
+- [ ] pa == a car pa = &a
+- [ ] *pa == &a car pa = a
+- [ ] *pa == &a car *pa = &a
+
+## Exemple 4
+
+Cependant il faut être attentif au contexte dans lequel s'utilise une variable. Dans l'exemple qui suit, nous avons `f()` qui est appelé une fois depuis le `main()` et une autre depuis `g()`. Chaque appel de `f()` produit un contexte différent pour son paramètre `p`.
+
+```C runnable
+#include <stdio.h>
+
+void f(int p) {
+	printf("L'adresse de p dans f() est %p\n", &p);
+	printf("Le contenu de p dans f() est %d\n",p);
+}
+
+void g(int a) {
+	printf("L'adresse de a dans g() est %p\n", &a);
+	printf("Le contenu de a dans g() est %d\n",a);
+	f(r);
+}
+
+int main() {
+	int a = 55;
+
+	printf("L'adresse de a dans main() est %p\n", &a);
+	printf("Le contenu de a dans main() est %d\n", a);
+	f(a);
+	g(a);
+
+	return 0;
+}
+```
 
 
 # Quizz
