@@ -13,7 +13,7 @@ int main() {
 		tmp_a=test_val_a[i];
 		tmp_b=test_val_b[i];
 		echange(&tmp_a,&tmp_b);
-		if (tmp_b=test_val_a[i] && tmp_a=test_val_b[i]) {
+		if (tmp_b==test_val_a[i] && tmp_a==test_val_b[i]) {
             ok = ok && 1;
         }
         else {
