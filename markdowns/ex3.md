@@ -1,6 +1,6 @@
 #  Exercice 3
  
-Générer la liste des x premier nombre premier
-## Résolution
+Tester si un nombre est premier
+## Resolution
 
-@[Fonction d'échange]({"stubs": ["src/Exercise3/prime.c"],"command": "sh /project/target/run.sh"})
+@[tester si un nombre est premier]({"stubs": ["src/Exercise3/prime.c"],"command": "sh /project/target/run.sh","project": "prime"})

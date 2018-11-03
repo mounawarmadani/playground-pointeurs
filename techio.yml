@@ -13,15 +13,13 @@ plan:
 - title: Exercice 5
   statement: markdowns/ex5.md  
 projects:
- prime:
-   root: /prime
-   runner:
-    name: techio/cmake-gcc-runner
-    version: latest
- swap:
-   root: /swap
-  runner:
-    name: techio/cmake-gcc-runner
-    version: latest
-  
-	
+  swap:
+    root: /swap
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest
+  prime:
+    root: /prime
+    runner:
+      name: techio/cmake-gcc-runner
+      version: latest
