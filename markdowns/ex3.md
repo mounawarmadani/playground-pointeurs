@@ -1,4 +1,4 @@
-# Exercice 4
+# Exercice 3
 
 Différentes altitudes d'une étape du tour de France sont mémorisées dans un vecteur.
 L'exercice consiste à écrire un programme qui calcule le nombre de cols dans l'étape.
