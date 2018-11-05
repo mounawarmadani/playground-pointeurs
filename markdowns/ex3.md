@@ -12,4 +12,4 @@ void main()
 ```
 
 
-![Etape du tour de France](images/Tour-de-France-decouvrez-le-parcours-de-la-15eme-etape-entre-Millau-et-Carcassonne.jpg)
+![Etape du tour de France](images/etape.jpg)
