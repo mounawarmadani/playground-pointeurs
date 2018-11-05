@@ -12,4 +12,4 @@ void main()
 ```
 
 
-![Etape du tour de France](images/etape.jpg)
+![Etape du tour de France](images/etape_tour_de_france.jpg)
