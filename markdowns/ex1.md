@@ -1,7 +1,7 @@
 # Exercice 1
 
-Il faut rédiger une fonction permettant d'échanger les valeurs de 2 variables de type entier. 
-L'exercice sera résolu et tester automatiquement dans l'interface ci-dessous.
+L'exercice consiste à rédiger une fonction permettant d'échanger les valeurs de 2 variables de type entier. 
+L'exercice sera résolu et testé automatiquement dans l'interface ci-dessous.
 
 ## Résolution
 
