@@ -3,4 +3,13 @@
 Différentes altitudes d'une étape du tour de France sont mémorisées dans un vecteur.
 L'exercice consiste à écrire un programme qui calcule le nombre de cols dans l'étape.
 
-![Etape du tour de France](http://resize2-europe1.ladmedia.fr/r/622,311,FFFFFF,center-middle/img/var/europe1/storage/images/europe1/sport/tour-de-france-decouvrez-le-parcours-de-la-15eme-etape-entre-millau-et-carcassonne-3716216/49389803-1-fre-FR/Tour-de-France-decouvrez-le-parcours-de-la-15eme-etape-entre-Millau-et-Carcassonne.jpg)
+```c
+void main()
+{
+	int etape[7]={538,330,928,597,234,1205,201}; 
+	// à compléter
+}
+```
+
+
+![Etape du tour de France](images/etape_tour_de_france.jpg)
